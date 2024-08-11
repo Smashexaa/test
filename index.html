@@ -68,59 +68,7 @@
                 <li>Следвай твоите мечти - POPOFF</li>
            </ul>
         </div>
-    </section>
-    
-    <section class="home section third-section">
-        <div class="parallax-background1" id="parallax"></div>
-        <div class="left" id="parallax2">
-            <h2 class="hideOnMobile2">НАШИЯТ ЕКИП ВИНАГИ Е НА СРЕЩА ПРИ ПРОБЛЕМИ. ПИТАЙ НИ ОЩЕ СЕГА ОТ МЕНЮТО!</h2>
-        </div>
-        <div class="home-content">
-            <div class="container">
-                <form id="discordForm">
-                    <h3>ИМАШ ПРОБЛЕМ? ПИШИ НИ!</h3>
-                    <input type="text" name="name" id="name" placeholder="Discord Username" required>
-                    <input type="email" name="email" id="email" placeholder="Email - за обратна връзка" required>
-                    <textarea id="message" name="textarea" rows="4" placeholder="Опиши твоят проблем тук!" required></textarea>
-                    <button type="submit">ИЗПРАТИ</button>
-                </form>
-            </div>
-        </div>
-        
-        <script>
-            document.getElementById('discordForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Спира стандартното поведение на формата
-        
-                const webhookURL = 'https://discord.com/api/webhooks/1271489870384201881/J_vjYcJ2770D4nJy099mwTNxBiRd4CaCugyraYX4uGsbuhFQlr9vMRqlTECG9S-zaDDP'; // Тук сложете вашия Discord Webhook URL
-                const username = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-        
-                const payload = {
-                    content: `**Discord Username:** ${username}\n**Email:** ${email}\n**ПРОБЛЕМ:** ${message}`
-                };
-        
-                fetch(webhookURL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(payload)
-                })
-                .then(response => {
-                    if (response.ok) {
-                        alert('Вашето съобщение беше изпратено до екипа ни!');
-                    } else {
-                        alert('Възникна проблем при изпращането на съобщението. Моля, опитайте отново.');
-                    }
-                })
-                .catch(error => {
-                    alert('Възникна грешка: ' + error.message);
-                });
-            });
-        </script>
-        
-    </section>
+    </section
     
     <script>
         function showSidebar(){
