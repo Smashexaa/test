@@ -668,24 +668,21 @@ span {
 /**container things**/
 /**container things**/
 
-@media(max-width: 800px){
+@media (max-width: 800px) {
     .container {
         background-color: #1b1b1b;
         padding: 20px;
         border-radius: 20px;
-        width: 430px;
+        max-width: 430px; /* Заменете width с max-width */
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        margin: 0 auto; /* Центрира контейнера */
     }
-}
 
-@media(max-width: 800px){
     .container h3 {
         margin-bottom: 20px;
         font-size: 23px;
     }
-}
 
-@media(max-width: 800px){
     .container input[type="text"],
     .container input[type="email"],
     .container textarea {
@@ -697,25 +694,19 @@ span {
         border-radius: 10px;
         color: #fff;
         font-size: 14px;
-}
-}
+    }
 
-@media(max-width: 800px){
     .container textarea {
         height: 130px;
         resize: none;
     }
-}
 
-@media(max-width: 800px){
     .container input[type="text"]::placeholder,
     .container input[type="email"]::placeholder,
     .container textarea::placeholder {
         color: #646464;
-}
-}
+    }
 
-@media(max-width: 800px){
     .container button {
         width: 100%;
         padding: 12px;
@@ -726,13 +717,12 @@ span {
         color: #fff;
         cursor: pointer;
     }
-}
 
-@media(max-width: 800px){
     .container button:hover {
         background-color: #a64cff;
     }
 }
+
 
 /**container things END**/
 /**container things END**/
