@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EraX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">SBP PRODUCTIONS</a>
+        <nav class="sidebar">
+            <a href="#" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="index.html" class="active">HOME</a>
+            <a href="applications.html">CONTACT US</a>
+            <a href="shop.html">PRICING</a>
+            <a href="updates.html">SIGN UP</a>
+        </nav>
+        <nav class="navbar">
+            <a href="index.html" class="active1">HOME</a>
+            <a href="applications.html" class="hideOnMobile2">CONTACT US</a>
+            <a href="shop.html" class="hideOnMobile3">PRICING</a>
+            <a href="updates.html" class="hideOnMobile4">SIGN UP</a>
+            <a class="menu-button" href="#" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </nav>
+    </header>
+    
+    <section class="parallax-container">
+        <div class="parallax-background" id="parallax"></div>
+        <div class="parallax">
+            <div class="parallax-content">
+                <h1>Better quality</h1>
+                <h1><span>for everyone</span></h1>
+                <p>Professional music beats, video editing, graphic designs and web development <span>all in one place.</span> Bring your ideas to life with our help! - POPOFF & STAVRI</p>
+                <div class="btn-box">
+                    <a href="https://discord.gg/QCcZWhbMXe" target="_blank">GET STARTED</a>
+                    <a href="https://cfx.re/join/3d9dlr" target="_blank">OUR WORK</a>
+                </div>
+            </div>
+            <img class="logo1" src="logo1.png" alt="logo" >
+            <script>
+                document.querySelector('.logo1').addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                });
+            </script>
+        </div>
+    </section>
+    
+    <section class="home section">
+        <div class="home-content">
+            <h1>ЗА НАС</h1>
+            <ul>
+                <li>Ние сме малкото в България, които влагат в сървъра си откъм ресурси и цялостно преживяване. Някои сървъри правят всичко за пари, а ние правим всичко за RolePlay. Сървъра е почнат от базовите ресурси на txAdmin и постепенно изграждахме qb-core проекта EraX, който винаги ще се поддържа и при проблем сме готови да го отстраним. Използваме реалистични roleplay ситуации, като гледаме реални случай. Примерно тренираме нашите полицаи чрез истински видеа на академии или взимаме експерти. Целта ни е да създадем уникално преживяване с различни неща за правене, а не да влезеш и да се чудиш какво да правиш.</h3></li>
+            </ul>
+            <h1>ЗАЩО ДА ВЛЕЗЕТЕ</h1>
+            <ul>
+                <li>РЕАЛИСТИЧНИ СКРИПТОВЕ: Нашият екип е подбрал качествени скриптове, които да направят вашата игра в истински RolePlay!</h3></li>
+                <li>ДОБЪР ЕКИП: Ние следим нашият екип и всяко тяхно действие. При нас екипа знае че не толерираме неотговорност!</h3></li>
+                <li>ДОБРА ЗАЩИТА: По време на RP ситуации няма да срещате зловредни модери които да съсипят вашето удоволствие!</h3></li>
+                <li>ДОБРО COMMUNITY: Нашето community е добро към новите граждани и винаги ще помогнат при проблем, както и екипа ни!</h3></li>
+            </ul>
+            <h1>ВЛЕЗНИ СЕГА И СТАНИ ЧАСТ ОТ СЕМЕЙСТВОТО</h1>
+            <ul>
+                <li>Следвай твоите мечти - POPOFF</li>
+           </ul>
+        </div>
+    </section>
+    
+    <section class="home section third-section">
+        <div class="parallax-background1" id="parallax"></div>
+        <div class="left" id="parallax2">
+            <h2>НАШИЯТ ЕКИП ВИНАГИ Е НА СРЕЩА ПРИ ПРОБЛЕМИ. ПИТАЙ НИ ОЩЕ СЕГА ОТ МЕНЮТО!</h2>
+        </div>
+        <div class="home-content">
+            <div class="container">
+                <form id="discordForm">
+                    <h3>ИМАШ ПРОБЛЕМ? ПИШИ НИ!</h3>
+                    <input type="text" name="name" id="name" placeholder="Discord Username" required>
+                    <input type="email" name="email" id="email" placeholder="Email - за обратна връзка" required>
+                    <textarea id="message" name="textarea" rows="4" placeholder="Опиши твоят проблем тук!" required></textarea>
+                    <button type="submit">ИЗПРАТИ</button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('discordForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Спира стандартното поведение на формата
+        
+                const webhookURL = 'https://discord.com/api/webhooks/1271489870384201881/J_vjYcJ2770D4nJy099mwTNxBiRd4CaCugyraYX4uGsbuhFQlr9vMRqlTECG9S-zaDDP'; // Тук сложете вашия Discord Webhook URL
+                const username = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+                const payload = {
+                    content: `**Discord Username:** ${username}\n**Email:** ${email}\n**ПРОБЛЕМ:** ${message}`
+                };
+        
+                fetch(webhookURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Вашето съобщение беше изпратено до екипа ни!');
+                    } else {
+                        alert('Възникна проблем при изпращането на съобщението. Моля, опитайте отново.');
+                    }
+                })
+                .catch(error => {
+                    alert('Възникна грешка: ' + error.message);
+                });
+            });
+        </script>
+        
+    </section>
+    
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 POPOFF. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
