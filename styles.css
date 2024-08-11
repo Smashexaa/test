@@ -646,7 +646,7 @@ span {
 
 @media(max-width: 800px){
     .home-content h1 {
-        font-size: 55px;
+        font-size: 45px;
         font-weight: 700;
         line-height: 1.2;
         background: linear-gradient(to right, #ffffff, #464646); /* Цветовете на градиента */
