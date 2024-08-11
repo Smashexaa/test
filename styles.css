@@ -646,7 +646,7 @@ span {
 
 @media(max-width: 800px){
     .home-content h1 {
-        font-size: 65px;
+        font-size: 55px;
         font-weight: 700;
         line-height: 1.2;
         background: linear-gradient(to right, #ffffff, #464646); /* Цветовете на градиента */
@@ -657,7 +657,7 @@ span {
 
 @media(max-width: 800px){
     ul li {
-        font-size: 17px; /* Регулиране на размера на шрифта според нуждите */
+        font-size: 15px; /* Регулиране на размера на шрифта според нуждите */
         margin-bottom: 13px; /* Регулиране на марджините между елементите на списъка */
         padding-left: 13px; /* Добавяне на ляв отстъп, за да побере символите на списъка */
         position: relative;
