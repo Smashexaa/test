@@ -592,8 +592,74 @@ span {
     }
 }
 
-@media (max-width: 1080px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
+@media(max-width: 800px){
+    .logo1{
+        display: none;
     }
+}
+
+@media(max-width: 800px){
+    .logo{
+        font-size: large;
+    }
+}
+
+@media(max-width: 800px){
+    .header {
+        position: fixed;
+        top: 20px; /* Отстояние от върха на страницата */
+        left: 0;
+        right: 0; /* Добавено отстояние от дясната страна */
+        width: 90%; /* Ширина на хедъра */
+        height: 7%;
+        margin: 0 auto; /* Центриране на хедъра */
+        padding: 23px 10%;
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        border: 1px solid #646464; /* Комбинирани border свойства */
+        border-radius: 18px;
+    }
+}
+
+@media(max-width: 800px){
+    .parallax-content h1 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.2;
+        color: white;
+        margin-top: 1px;
+    }
+}
+
+@media(max-width: 800px){
+    .parallax-content p {
+        color: #ebebeb; /* Бял цвят за текста */
+        font-size: 15px; /* Размер на шрифта */
+        line-height: 1.5; /* Височина на редовете за по-добра четливост */
+        margin: 15px 0; /* Разстояние отгоре и отдолу */
+        max-width: 570px;
+    }
+}
+
+@media(max-width: 800px){
+    
+}
+
+@media(max-width: 800px){
+    
+}
+
+@media(max-width: 800px){
+    
+}
+
+@media(max-width: 800px){
+    
+}
+
+@media(max-width: 800px){
+    
+}
